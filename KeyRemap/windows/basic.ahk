@@ -1,6 +1,9 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
+
+
+
 ;[Laptop HQ] @xMaxrayx @Unbreakable-ray [Code : ReBorn]   at 18:32:51  on 26/5/2024   (24H Format)  (UTC +2) 	 {Can we prove we are stronger than before?}
 
 
@@ -83,16 +86,7 @@ $^RWin::{
 
 
 
-AppOpenerMangerV1(appName , appPath){
-    if WinActive(appName)
-        WinMinimize(appName)
 
-    else if WinExist(appName)
-        WinActivate(appName)
-    else
-        Run(appPath)
-
-}
 
 ~F13 & Tab::{
 
