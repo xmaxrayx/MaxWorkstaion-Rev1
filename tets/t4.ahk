@@ -11,3 +11,15 @@ F::{
 L::{
     MsgBox (WinGetStyle("A"))
 }
+
+; r::{ ;0x800000
+;     WinSetStyle("^0x800000", "A")
+; }
+
+
+
+r::{ ;0x800000
+    WinSetStyle("^0x80000", "A")
+}
+
+
