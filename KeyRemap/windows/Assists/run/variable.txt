@@ -1,0 +1,12 @@
+%ProgramFiles%
+%ProgramFiles(x86)%
+%APPDATA%
+%HOMEDRIVE%
+%Path%
+%ProgramData%
+%ProgramFiles%
+%ProgramFiles(x86)%
+%USERPROFILE%
+shell:appsfolder
+shell:startup
+%APPDATA%\Microsoft\Windows\Recent Items

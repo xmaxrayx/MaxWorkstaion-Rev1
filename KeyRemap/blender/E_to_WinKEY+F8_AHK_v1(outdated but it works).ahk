@@ -1,12 +1,11 @@
-;AHK 1v
+#Requires AutoHotkey v1 
+#SingleInstance, force
+
 ;thanks Rohwedder from AHK fourms <3
 ;https://www.autohotkey.com/boards/viewtopic.php?p=514742#p514742
 
 
 ;[Laptop HQ] @xMaxrayx @Unbreakable-ray [Code : ReBorn]   at 17:03:43  on 21/1/2024   (24H Format)  (UTC +2) 	 {Can we prove we are stronger than before?}
-
-
-
 
 #IfWinActive,ahk_exe blender.exe ;ahk will work only for blender
 
