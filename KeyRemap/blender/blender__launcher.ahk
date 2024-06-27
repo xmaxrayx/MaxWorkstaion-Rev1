@@ -16,6 +16,7 @@ if A_Args.Length > 0{
 
 }
 
+;=====================
 
 
 
@@ -24,7 +25,6 @@ if A_Args.Length > 0{
 
 
 global reMabAHK := unset
-
 global blender__EXE_name := "ahk_exe blender.exe"
 
 
@@ -36,7 +36,6 @@ musicPlay.play(A_ScriptDir . "\Assists\Opening Blender")
 
 
 Run(blender__EXE___Path)
-
 Run('E_to_WinKEY+F8_AHK_v1(outdated but it works).ahk')
 
 if !WinExist(blender__EXE_name){
@@ -52,7 +51,6 @@ while WinExist(blender__EXE_name){
         ExitApp()
         ; global reMabAHK
         ; ProcessClose(reMabAHK)
-        
     }
 
 }

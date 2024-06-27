@@ -1,15 +1,11 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-
-#Include <maxray\AppOpenerMangerV1>
-
 ;[Laptop HQ] @xMaxrayx @Unbreakable-ray [Code : ReBorn]   at 18:32:51  on 26/5/2024   (24H Format)  (UTC +2) 	 {Can we prove we are stronger than before?}
 
 
 f13 & space::
 #space::{
-    
     SendInput('^{Launch_App2}')
 }
 
@@ -18,18 +14,11 @@ global Terminal__Name := "ahk_exe WindowsTerminal.exe"
 global Terminal__Path := "C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.19.11213.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe"
 
 
-
-
-
-
 F13::F13
 
 
 ~Pause::Rwin
 #Pause:: return
-
-
-
 
 
 
@@ -44,45 +33,7 @@ $^CtrlBreak::
 $^RWin::{
     SendInput("{Ctrl up}{RWin Down}{RWin up}")
     ; Run("shell:::{2559a1f8-21d7-11d4-bdaf-00c04f60b9f0}")
-    try{
-        WinShow("ahk_class Shell_TrayWnd")
-    }
-    SetTimer(AutoHideTaskbar, -5000)
-
 }
-
-
-
-hideTaskbar(*){
-
-    if WinExist("ahk_class Shell_TrayWnd"){
-        
-        try{
-            WinHide("ahk_class Shell_TrayWnd")
-        }
-    }
-
-    else{
-
-        try{
-            WinShow("ahk_class Shell_TrayWnd")
-        }
-        ; SoundBeep()
-    }
-}
-
-
-
-
-AutoHideTaskbar(*){
-        Sleep(500)
-        try{
-            WinHide("ahk_class Shell_TrayWnd")
-        }
-        SoundBeep()
-    
-}
-
 
 
 
