@@ -25,13 +25,6 @@ global Terminal__Path := "C:\Program Files\WindowsApps\Microsoft.WindowsTerminal
 F13::F13
 
 
-~Pause::Rwin
-#Pause:: return
-
-
-
-
-
 
 ; 
 ~Pause & L:: {
