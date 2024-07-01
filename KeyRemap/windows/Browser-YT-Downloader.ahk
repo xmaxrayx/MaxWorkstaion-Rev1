@@ -1,6 +1,9 @@
-#Requires AutoHotkey v2.0
-#SingleInstance Force
+; #Requires AutoHotkey v2.0
+; #SingleInstance Force
 
+
+#Include <maxray\GUI\warningLabel_v1_>
+#Include <maxray\randomPickAndPlay___Folder\randomPickAndPlay___v0_2>
 
 ; v1 [Laptop HQ] @xMaxrayx @Unbreakable-ray [Code : ReBorn]   at 09:46:55  on 8/5/2024   (24H Format)  (UTC +2) 	 {Can we prove we are stronger than before?}
 
@@ -25,10 +28,10 @@ global output__Path := A_UserPath() . "\Music" ; -P
 
 
 
-; $#F1::
+; $#F1::ss
 ~F13 & 2::{ ;f1
 
-   
+    OpenVideoDownloader()
 
 
 }
@@ -45,61 +48,53 @@ global output__Path := A_UserPath() . "\Music" ; -P
 
 ~F13 & 1::{ 
 
-    global Youtube_Raw__URL := unset
-    try{
-        global Youtube_Raw__URL := WinGetTitle("A")
-    }
-
-    if IsSet(Youtube_Raw__URL){
-        YT__URL := youtubeSearch(Youtube_Raw__URL)
-    }
-
-    if YT__URL == 0 {
-        ytLKink__vervidtior()
-    }
-    else{
-        ; MsgBox YT__URL
-        ; Run('cmd /k ""C:\Users\Max_Laptop\App files\yt-dlp.exe" -x --embed-thumbnail --audio-format mp3 --no-playlist -P "C:\Users\Max_Laptop\Music" "' YT__URL '" --ffmpeg-location "C:\Program Files\ffmpeg\bin""')
-
-
-        
-        try{
-           global oldBrowserWindow_Before__downloading__ID := WinGetID("A")
-        }
-
-        
-        Run(A_ComSpec ' /c ""C:\Users\Max_Laptop\App files\yt-dlp.exe" -x --embed-thumbnail --audio-format mp3 --no-playlist -P "C:\Users\Max_Laptop\Music\YT" "' YT__URL '" --ffmpeg-location "C:\Program Files\ffmpeg\bin""')
-        Sleep(500)
-
-        global  oldBrowserWindow_Before__downloading__ID
-    
-        if IsSet(oldBrowserWindow_Before__downloading__ID){
-            WinActivate("ahk_id " oldBrowserWindow_Before__downloading__ID)
-        
-        }
-        else{
-            SendInput("{ALT Down}{Tab Down}{Tab Up}{Alt up}")
-        }
-
-        while (WinActive("C:\Windows\system32\cmd.exe")){
-            SendInput("{ALT Down}{Tab Down}{Tab Up}{Alt up}")
-        }
-
-
-
-
-    }
 
 
 
     
-
-
-
-
+    Process_ytDLP__ID := mp3YTdownloader()
+    B_ProcessWait(Process_ytDLP__ID)
 
 
 }
+
+
+
+
+
+
+
+
+    B_ProcessWait(watchProcess, message?){
+        SetTimer( ___watchProcess ,500)
+            ___watchProcess(){
+
+                if ProcessExist(watchProcess)
+                    return
+                
+                SetTimer , 0
+                ___ytAnimeGirl()
+            }
+
+    }
+
+
+
+
+
+
+
+
+
+
+___ytAnimeGirl(){
+    Warning_label_v1("done the download")
+    play := randomPickAndPlay___v0_2()
+    play.play("C:\Users\Max_Laptop\Programming\Github\xMaxrayx_Github\MaxWorkstaion-Rev1\KeyRemap\windows\Assists\YT\Finished the download")
+}
+
+
+
 
 
 
@@ -233,7 +228,7 @@ OpenVideoDownloader(Youtube_Raw__URL := "" ){
 
     }
 
-    else if WinActive(OpenVideoDownloader_EXE__Name){ ;properly wont work don't bother to work with
+    else if WinActive(OpenVideoDownloader_EXE__Name){  ;!exit ;active ;else       ;properly wont work don't bother to work with becouse there is #hotif with hotkey
         WinMinimize(OpenVideoDownloader_EXE__Name)
         
         if IsSet(oldActiveWindow__browserID){
@@ -242,7 +237,7 @@ OpenVideoDownloader(Youtube_Raw__URL := "" ){
 
     }
 
-    else {
+    else { ;!exit && !active 
         try {
             global oldActiveWindow__browserID := WinGetID("A")
             global oldActiveWindow__browserID := ("ahk_id " oldActiveWindow__browserID)
@@ -275,129 +270,56 @@ OpenVideoDownloader(Youtube_Raw__URL := "" ){
 
 
     }
-
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;=== only for test::
-
-/*
-1::{
-    MsgBox KeyWaitCombo()
-
-    MsgBox KeyWaitCombo()
-
-    MsgBox KeyWaitCombo()
-
-    MsgBox KeyWaitCombo()
-
-
-
-
-
-    KeyWaitCombo(Options:="")
-    {
-        ih := InputHook(Options)
-        if !InStr(Options, "V")
-            ih.VisibleNonText := false
-        ih.KeyOpt("{All}", "E")  ; End
-        ; Exclude the modifiers
-        ih.KeyOpt("{LCtrl}{RCtrl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}", "-E")
-        ih.Start()
-        ih.Wait()
-        return ih.EndMods . ih.EndKey  ; Return a string like <^<+Esc
+mp3YTdownloader(){
+    global Youtube_Raw__URL := unset
+    try{
+        global Youtube_Raw__URL := WinGetTitle("A")
     }
-}
 
-
-
-
-
-
-
-*/
-
-
-/*
-
-3::{
-
-    ; RunWait( 'cmd \k ipconfig' )
-    ; Run(A_ComSpec " /k ipconfig /all")
-
-
-    YT__URL := "https://www.youtube.com/watch?v=UZXPxdJqPBA&list=RDMM&index=2"
-
-
-YTCommand := (yt_dlp__BaseCommand . " -P  '" output__Path . '" --ffmpeg-location'  
-. ffmpegPath '"'
-)
-    ;'C:\Users\Max_Laptop\App files\yt-dlp.exe' -x --embed-thumbnail --audio-format mp3 --no-playlist -P"C:\Users\Max_Laptop\Music" --ffmpeg-location "C:\Program Files\ffmpeg\bin\ffmpeg.exe" https://youtu.be/kCWX6yxg-iA
-
-    ; A:= ( A_ComSpec  " /K "  yt_dlp_exe__Path   YTCommand "'" )
-    ; Run(A)
-
-    ; Run(A_ComSpec ' /k "' yt_dlp_exe__Path '"'  )
-
-
-    ; Run( 'CMD /k "' yt_dlp_exe__Path ' "'  " -x --embed-thumbnail --audio-format mp3 --no-playlist "  YT__URL "-P C:\Users\Max_Laptop\Music"   ) ;" -P '"  output__Path  "'" 
-    ;
-
-
-
-    Run('cmd /k ""C:\Users\Max_Laptop\App files\yt-dlp.exe" -x --embed-thumbnail --audio-format mp3 --no-playlist -P "C:\Users\Max_Laptop\Music" "' YT__URL '" --ffmpeg-location "C:\Program Files\ffmpeg\bin""')
-
-
-
-}
-
-
-*/
-; l::{
-; MsgBox youtubeSearch("Analogy - YouTube - https://www.youtube.com/watch?v=DPUngxYPb1g&list=RDMM&index=10 - Google Chrome")
-; }
-
-
-/*
-
-YT__URL := "https://www.youtube.com/watch?v=UZXPxdJqPBA&list=RDMM&index=2"
-
-
-YTCommand := (yt_dlp__BaseCommand . " -P  '" output__Path . "' --ffmpeg-location '" 
-. ffmpegPath "'" 
-)
-
-global yt_dlp_exe__Path := "'" . yt_dlp_exe__Path . "'"
-
-
-; Run( A_ComSpec  " /c "  yt_dlp_exe__Path '" ' YTCommand '"'  )
-
-A:= ( A_ComSpec  " /K start'"  yt_dlp_exe__Path   YTCommand "'" )
-
-RunWait( a)
-
-
-MsgBox a
-
-
-    if WinExist("ahk_exe Open Video Downloader.exe"){
-
-    }else{
-        ; Run("explorer " YTDownlowderPath) 
+    if IsSet(Youtube_Raw__URL){
+        YT__URL := youtubeSearch(Youtube_Raw__URL)
     }
-*/
+
+    if YT__URL == 0 {
+        ytLKink__vervidtior()
+    }
+    else{
+        ; MsgBox YT__URL
+        ; Run('cmd /k ""C:\Users\Max_Laptop\App files\yt-dlp.exe" -x --embed-thumbnail --audio-format mp3 --no-playlist -P "C:\Users\Max_Laptop\Music" "' YT__URL '" --ffmpeg-location "C:\Program Files\ffmpeg\bin""')
+
+
+        
+        try{
+           global oldBrowserWindow_Before__downloading__ID := WinGetID("A")
+        }
+
+        ytDLP := unset
+        Run(A_ComSpec ' /c ""C:\Users\Max_Laptop\App files\yt-dlp.exe" -x --embed-thumbnail --audio-format mp3 --no-playlist -P "C:\Users\Max_Laptop\Music\YT" "' YT__URL '" --ffmpeg-location "C:\Program Files\ffmpeg\bin""',,"Minimize" ,&ytDLP )
+        Sleep(500)
+
+        global  oldBrowserWindow_Before__downloading__ID
+    
+        if IsSet(oldBrowserWindow_Before__downloading__ID){
+            WinActivate("ahk_id " oldBrowserWindow_Before__downloading__ID)
+        
+        }
+        else{
+            SendInput("{ALT Down}{Tab Down}{Tab Up}{Alt up}")
+        }
+
+        while (WinActive("C:\Windows\system32\cmd.exe")){
+            SendInput("{ALT Down}{Tab Down}{Tab Up}{Alt up}")
+        }
+
+
+
+
+    }
+
+    return ytDLP
+
+}

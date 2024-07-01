@@ -6,7 +6,7 @@
 try{
     WinHide("ahk_class Shell_TrayWnd")
 }
-
+~f13 & Esc::
 $^CtrlBreak::
 $^RWin::{
     SendInput("{Ctrl up}{RWin Down}{RWin up}")

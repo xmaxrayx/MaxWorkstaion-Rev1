@@ -236,8 +236,11 @@ listPythonFolder := listOfFolder___v0_1("C:\Users\Max_Laptop\AppData\Local\Progr
 
     pythonGui.Show("NoActivate")
 
-    
-    WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
+    try{ ;fix if tray tash bar was heddin
+        WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
+    }catch{
+        TrayHeight:= 0
+    }
     height := A_ScreenHeight-485-TrayHeight
     
     ; WinSetTransparent(0)
@@ -290,7 +293,12 @@ runGUIvariableHelper__FileToGUI(file, x , y , title:=A_ScriptName ){
     SystemVarFolderGUI.Destroy()
 	}
 
-    WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
+    try{ ;fix if tray tash bar was heddin
+        WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
+    }catch{
+        TrayHeight := 0
+    }
+
     height := A_ScreenHeight-485-TrayHeight
     SystemVarFolderGUI.Show()
     ; WinSetTransparent(0)
@@ -387,8 +395,11 @@ runGUIvariableHelper(arrayObject, title:=A_ScriptName){
     SendText(button.text)
     SystemVarFolderGUI.Destroy()
 	}
-
-    WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
+    try{
+        WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
+    }catch{
+        TrayHeight := 0
+    }
     height := A_ScreenHeight-485-TrayHeight
     SystemVarFolderGUI.Show()
     ; WinSetTransparent(0)
