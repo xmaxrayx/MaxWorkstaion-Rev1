@@ -46,7 +46,7 @@ AutoHideTaskbar(*){
         try{
             WinHide("ahk_class Shell_TrayWnd")
         }
-        SoundBeep()
+       SoundBeep()
     
 }
 

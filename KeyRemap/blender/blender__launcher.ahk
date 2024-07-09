@@ -26,8 +26,7 @@ if A_Args.Length > 0{
 
 global reMabAHK := unset
 global blender__EXE_name := "ahk_exe blender.exe"
-
-
+global blender_exe_process := "blender.exe"
 
 
 global musicPlay := randomPickAndPlay___v0_2()
@@ -45,7 +44,7 @@ if !WinExist(blender__EXE_name){
 SoundBeep
 while WinExist(blender__EXE_name){
     sleep 1000
-    if !WinExist(blender__EXE_name){
+    if !WinExist(blender__EXE_name) && !ProcessExist(blender_exe_process){
         SoundBeep(1000,500)
         SoundBeep(1000,500)
         ExitApp()

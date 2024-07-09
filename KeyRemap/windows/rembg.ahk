@@ -5,7 +5,8 @@
 #Include <maxray\GUI\warningLabel_v1_>
 #Include <maxray\musicplayerV1>
 #Include <maxray\randomFilefromFolder_v1_>
-#Include <maxray\randomFileFromFolder_uniqe____Folder\randomFileFromFolder_uniqe__v{1.0}>
+#Include <maxray\randomFileFromFolder_uniqe____Folder\randomFileFromFolder_uniqe__v{0.2}>
+; #Include <maxray\randomFileFromFolder_uniqe____Folder\randomFileFromFolder_uniqe__v{1.0}>
 #Include <maxray\GUI\indicator_GUI___Folder\indicator_GUI__v{0.1}>
 
 
@@ -54,7 +55,7 @@ play := musicPlayer()
 ~F13 & p::{
     SoundBeep
     Warning_label_v1("Removing the background", ,,,160,"0x63107b" ,,"s20 Bold ceae9e9" )
-    ; RunWait('"MaxAutoRembg.py" "1" "0" "isnet-anime" "0"' , , "Hide")
+    RunWait('"MaxAutoRembg.py" "1" "0" "isnet-anime" "0"' , , "Hide")
     SoundBeep
     static avoidName_str := ""
     static randomFile := ""

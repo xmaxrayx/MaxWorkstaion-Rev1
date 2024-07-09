@@ -17,3 +17,5 @@
 #Include capslock.ahk
 #Include taskbar.ahk
 #Include Browser-YT-Downloader.ahk
+#Include Explorer.ahk
+#Include rembg.ahk
