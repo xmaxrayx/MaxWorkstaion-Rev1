@@ -1,5 +1,5 @@
 
-#Requires AutoHotkey v2.0
+#Requires AutoHotkey >=2.1- <3.0
 #SingleInstance Force
 
 ;[Laptop HQ] @xMaxrayx @Unbreakable-ray [Code : ReBorn]   at 12:28:49  on 28/5/2024   (24H Format)  (UTC +2) 	 {Can we prove we are stronger than before?}
@@ -19,3 +19,6 @@
 #Include Browser-YT-Downloader.ahk
 #Include Explorer.ahk
 #Include rembg.ahk
+#Include KeybopreadTrain.AHK
+#Include scrlk.ahk
+ 

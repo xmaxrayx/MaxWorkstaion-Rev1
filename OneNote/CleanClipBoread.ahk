@@ -4,6 +4,10 @@
 #Include "Lib\WinClipAPI.ahk"
 #Include "Lib\WinClip.ahk"
 
+
+
+
+
 #HotIf WinActive("ahk_exe ONENOTE.EXE")
 
 Clip := WinClip()

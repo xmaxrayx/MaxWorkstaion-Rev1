@@ -1,0 +1,44 @@
+﻿\\\[scrlk.ahk]------------[12:11:17 PM 7/15/2024]\\\
+Error on line 35: Target window not found.
+
+
+\\\[scrlk.ahk]------------[12:11:30 PM 7/15/2024]\\\
+Error on line 42: Target window not found.
+
+
+\\\[scrlk.ahk]------------[12:12:33 PM 7/15/2024]\\\
+Error on line 35: Target window not found.
+
+
+\\\[scrlk.ahk]------------[12:13:56 PM 7/15/2024]\\\
+Error on line 35: Target window not found.
+
+
+\\\[scrlk.ahk]------------[12:14:10 PM 7/15/2024]\\\
+Error on line 35: Target window not found.
+
+
+\\\[scrlk.ahk]------------[12:29:58 PM 7/15/2024]\\\
+Error on line 35: Target window not found.
+
+
+\\\[scrlk.ahk]------------[12:37:39 PM 7/15/2024]\\\
+Error on line 36: This value of type "String" has no property named "text".
+
+
+\\\[scrlk.ahk]------------[12:37:41 PM 7/15/2024]\\\
+Error on line 36: This value of type "String" has no property named "text".
+
+
+\\\[scrlk.ahk]------------[12:38:08 PM 7/15/2024]\\\
+Error on line 36: This value of type "String" has no property named "text".
+
+
+\\\[scrlk.ahk]------------[12:44:18 PM 7/15/2024]\\\
+Error on line 89: This value of type "indicator_GUI" has no property named "id".
+
+
+\\\[scrlk.ahk]------------[12:51:22 PM 7/15/2024]\\\
+Error on line 97: This value of type "indicator_GUI" has no property named "id".
+
+

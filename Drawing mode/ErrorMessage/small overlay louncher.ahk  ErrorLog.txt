@@ -1,0 +1,78 @@
+﻿\\\[small overlay louncher.ahk]------------[10:40:11 AM 7/17/2024]\\\
+Error on line 30: Failed attempt to launch program or document:
+Action: <l>
+Params: <>
+
+
+\\\[small overlay louncher.ahk]------------[10:40:47 AM 7/17/2024]\\\
+Error on line 30: Parameter #2 of Gui.Control.Prototype.OnEvent is invalid.
+
+
+\\\[small overlay louncher.ahk]------------[10:41:39 AM 7/17/2024]\\\
+Error on line 30: Parameter #2 of Gui.Control.Prototype.OnEvent is invalid.
+
+
+\\\[small overlay louncher.ahk]------------[10:42:33 AM 7/17/2024]\\\
+Error on line 30: Expected a String but got a Closure.
+
+
+\\\[small overlay louncher.ahk]------------[10:42:36 AM 7/17/2024]\\\
+Error on line 30: Expected a String but got a Closure.
+
+
+\\\[small overlay louncher.ahk]------------[10:44:14 AM 7/17/2024]\\\
+Error on line 30: Parameter #2 of Gui.Control.Prototype.OnEvent is invalid.
+
+
+\\\[small overlay louncher.ahk]------------[10:58:07 AM 7/17/2024]\\\
+Error on line 30: Expected a String but got a Func.
+
+
+\\\[small overlay louncher.ahk]------------[10:58:49 AM 7/17/2024]\\\
+Error on line 30: Parameter #2 of Gui.Control.Prototype.OnEvent is invalid.
+
+
+\\\[small overlay louncher.ahk]------------[10:59:45 AM 7/17/2024]\\\
+Error on line 30: Parameter #2 of Gui.Control.Prototype.OnEvent is invalid.
+
+
+\\\[small overlay louncher.ahk]------------[10:59:58 AM 7/17/2024]\\\
+Error on line 30: Value not enumerable.
+
+
+\\\[small overlay louncher.ahk]------------[11:00:01 AM 7/17/2024]\\\
+Error on line 30: Value not enumerable.
+
+
+\\\[small overlay louncher.ahk]------------[11:15:59 AM 7/17/2024]\\\
+Error on line 33: Value not enumerable.
+
+
+\\\[small overlay louncher.ahk]------------[11:17:06 AM 7/17/2024]\\\
+Error on line 33: Invalid index.
+
+
+\\\[small overlay louncher.ahk]------------[11:20:12 AM 7/17/2024]\\\
+Error on line 33: A control with this name already exists.
+
+
+\\\[small overlay louncher.ahk]------------[11:20:19 AM 7/17/2024]\\\
+Error on line 33: A control with this name already exists.
+
+
+\\\[small overlay louncher.ahk]------------[11:32:07 AM 7/17/2024]\\\
+Error on line 28: A control with this name already exists.
+
+
+\\\[small overlay louncher.ahk]------------[11:32:21 AM 7/17/2024]\\\
+Error on line 28: A control with this name already exists.
+
+
+\\\[small overlay louncher.ahk]------------[11:51:52 AM 7/17/2024]\\\
+Error on line 48: Parameter #1 of RegExMatchInfo.Prototype.__Item.Get is invalid.
+
+
+\\\[small overlay louncher.ahk]------------[11:57:54 AM 7/17/2024]\\\
+Error on line 52: This value of type "String" has no property named "__Item".
+
+
