@@ -1,0 +1,22 @@
+﻿\\\[cw.ahk]------------[9:44:39 AM 7/20/2024]\\\
+Error on line 9: This value of type "String" has no method named "Call".
+
+
+\\\[cw.ahk]------------[9:44:51 AM 7/20/2024]\\\
+Error on line 9: Failed attempt to launch program or document:
+Action: <C:\Windows\system32\cmd.exec:\Users\Max_Laptop\source\repos\ConsoleApp1\bin\Release\net8.0\ConsoleApp1.exe>
+Params: <>
+
+
+\\\[cw.ahk]------------[9:45:11 AM 7/20/2024]\\\
+Error on line 9: Failed attempt to launch program or document:
+Action: <C:\Windows\system32\cmd.exe'c:\Users\Max_Laptop\source\repos\ConsoleApp1\bin\Release\net8.0\ConsoleApp1.exe'>
+Params: <>
+
+
+\\\[cw.ahk]------------[9:45:36 AM 7/20/2024]\\\
+Error on line 9: Failed attempt to launch program or document:
+Action: <C:\Windows\system32\cmd.exe\k 'c:\Users\Max_Laptop\source\repos\ConsoleApp1\bin\Release\net8.0\ConsoleApp1.exe'>
+Params: <>
+
+

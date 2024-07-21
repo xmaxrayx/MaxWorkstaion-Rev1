@@ -1,0 +1,46 @@
+﻿\\\[powershell.ahk]------------[9:24:15 AM 7/21/2024]\\\
+Error on line 7: This global variable has not been assigned a value.
+
+
+\\\[powershell.ahk]------------[9:30:18 AM 7/21/2024]\\\
+Error on line 10: Failed attempt to launch program or document:
+Action: <[Environment]::GetFolderPath('MyDocuments') | clip>
+Params: <>
+
+
+\\\[powershell.ahk]------------[9:32:03 AM 7/21/2024]\\\
+Error on line 10: Failed attempt to launch program or document:
+Action: <$path = [Environment]::GetFolderPath('MyDocuments'); $path | Set-Clipboard>
+Params: <>
+
+
+\\\[powershell.ahk]------------[9:32:47 AM 7/21/2024]\\\
+Error on line 10: Failed attempt to launch program or document:
+Action: <[Environment]::GetFolderPath('MyDocuments') | Set-Clipboard>
+Params: <>
+
+
+\\\[powershell.ahk]------------[9:34:37 AM 7/21/2024]\\\
+Error on line 17: Parameter #2 invalid.
+
+
+\\\[powershell.ahk]------------[9:45:20 AM 7/21/2024]\\\
+Error on line 17: Failed attempt to launch program or document:
+Action: <powershell  (Get-ItemProperty -Path >
+Params: <HKCU:\Software\Microsoft\OneDrive" -Name "UserFolder").UserFolder | clip">
+
+
+\\\[powershell.ahk]------------[9:45:28 AM 7/21/2024]\\\
+Error on line 17: Failed attempt to launch program or document:
+Action: <powershell  (Get-ItemProperty -Path >
+Params: <HKCU:\Software\Microsoft\OneDrive" -Name "UserFolder").UserFolder | clip">
+
+
+\\\[powershell.ahk]------------[10:08:37 AM 7/21/2024]\\\
+Error on line 45: Parameter #1 of MsgBox requires a String, but received a Func.
+
+
+\\\[powershell.ahk]------------[10:08:51 AM 7/21/2024]\\\
+Error on line 45: Parameter #1 of MsgBox requires a String, but received a Func.
+
+
